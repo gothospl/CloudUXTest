@@ -1,0 +1,7 @@
+name: Suite
+parameters: { password: avid, username: steves }
+tests:
+  - name: LoginTestNG
+    classes:
+      - org.auto.fw.LoginTestNG
+

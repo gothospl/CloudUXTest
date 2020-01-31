@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="chromedriverpath" value="C:\\JebacOneDrive\\chromedriver.exe"/>
+  <parameter name="address" value="http://a51-wg3-mcux.bsi.lab"/>
+  <parameter name="expmsg" value="The user name or password you entered is incorrect"/>
+  <test name="Login(failed)">
+    <parameter name="password" value="avid"/>
+    <parameter name="username" value="steves"/>
+    <classes>
+      <class name="org.auto.fw.LoginTestNG">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="searchTest"/>
+          <include name="afterSuite"/>
+        </methods>
+      </class> <!-- org.auto.fw.LoginTestNG -->
+    </classes>
+  </test> <!-- Login(failed) -->
+</suite> <!-- Failed suite [Suite] -->
